@@ -25,12 +25,12 @@ import { ConfirmDialogModule } from 'primeng/confirmdialog';
 import { TooltipModule } from 'primeng/tooltip';
 
 // Services
-import { IRecord } from '../EcommerceInterface';
-import { RecordsService } from '../services/RecordsService';
-import { GroupsService } from '../services/GroupsService';
-import { StockService } from '../services/StockService';
-import { CartService } from '../services/CartService';
-import { UserService } from 'src/app/services/UserService';
+import { IRecord } from '../ecommerce.interface';
+import { RecordsService } from '../services/records';
+import { GroupsService } from '../services/groups';
+import { StockService } from '../services/stock';
+import { CartService } from '../services/cart';
+import { UserService } from 'src/app/services/user';
 import { MessageModule } from 'primeng/message';
 
 @Component({
@@ -49,8 +49,8 @@ import { MessageModule } from 'primeng/message';
     TooltipModule,
     MessageModule,
   ],
-  templateUrl: './RecordsComponent.html',
-  styleUrls: ['./RecordsComponent.css'],
+  templateUrl: './records.html',
+  styleUrls: ['./records.css'],
   providers: [ConfirmationService, MessageService],
 })
 export class RecordsComponent implements OnInit {

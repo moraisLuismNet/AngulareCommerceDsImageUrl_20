@@ -15,9 +15,9 @@ import { ConfirmDialogModule } from 'primeng/confirmdialog';
 import { MessageService, ConfirmationService } from 'primeng/api';
 
 // Services & Interfaces
-import { UserService } from 'src/app/services/UserService';
-import { CartService } from '../services/CartService';
-import { ICart } from '../EcommerceInterface';
+import { UserService } from 'src/app/services/user';
+import { CartService } from '../services/cart';
+import { ICart } from '../ecommerce.interface';
 
 @Component({
     selector: 'app-carts',
@@ -34,8 +34,8 @@ import { ICart } from '../EcommerceInterface';
         DialogModule,
         ConfirmDialogModule
     ],
-    templateUrl: './CartsComponent.html',
-    styleUrls: ['./CartsComponent.css'],
+    templateUrl: './carts.html',
+    styleUrls: ['./carts.css'],
     providers: [MessageService, ConfirmationService]
 })
 export class CartsComponent implements OnInit, OnDestroy {

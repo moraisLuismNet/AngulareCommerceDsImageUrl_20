@@ -28,12 +28,12 @@ import { DropdownModule } from 'primeng/dropdown';
 import { TableModule } from 'primeng/table';
 
 // Components
-import { NavbarComponent } from '../../shared/navbar/NavbarComponent';
+import { NavbarComponent } from '../../shared/navbar/navbar';
 
 // Services & Interfaces
-import { IGroup } from '../EcommerceInterface';
-import { GroupsService } from '../services/GroupsService';
-import { GenresService } from '../services/GenresService';
+import { IGroup } from '../ecommerce.interface';
+import { GroupsService } from '../services/groups';
+import { GenresService } from '../services/genres';
 
 @Component({
   selector: 'app-listgroups',
@@ -52,7 +52,7 @@ import { GenresService } from '../services/GenresService';
     DropdownModule,
     TableModule,
   ],
-  templateUrl: './ListgroupsComponent.html',
+  templateUrl: './list-groups.html',
   providers: [ConfirmationService, MessageService],
 })
 export class ListgroupsComponent implements OnInit {

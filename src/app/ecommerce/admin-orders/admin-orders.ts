@@ -14,8 +14,8 @@ import { ToastModule } from 'primeng/toast';
 import { MessageService } from 'primeng/api';
 
 // Services & Interfaces
-import { OrderService } from '../services/OrderService';
-import { IOrder } from '../EcommerceInterface';
+import { OrderService } from '../services/order';
+import { IOrder } from '../ecommerce.interface';
 
 @Component({
     selector: 'app-admin-orders',
@@ -31,8 +31,8 @@ import { IOrder } from '../EcommerceInterface';
         MessageModule,
         ToastModule
     ],
-    templateUrl: './AdminOrdersComponent.html',
-    styleUrls: ['./AdminOrdersComponent.css'],
+    templateUrl: './admin-orders.html',
+    styleUrls: ['./admin-orders.css'],
     providers: [MessageService]
 })
 export class AdminOrdersComponent implements OnInit, OnDestroy {

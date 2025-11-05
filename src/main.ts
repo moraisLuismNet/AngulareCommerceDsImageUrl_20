@@ -4,9 +4,9 @@ import { provideRouter } from '@angular/router';
 import { provideAnimations } from '@angular/platform-browser/animations';
 import { ConfirmationService, MessageService } from 'primeng/api';
 
-import { AppComponent } from './app/AppComponent';
-import { routes } from './app/AppRoutes';
-import { AuthGuard } from './app/guards/AuthGuardService';
+import { AppComponent } from './app/app';
+import { routes } from './app/app.routes';
+import { AuthGuard } from './app/guards/auth-guard';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 bootstrapApplication(AppComponent, {

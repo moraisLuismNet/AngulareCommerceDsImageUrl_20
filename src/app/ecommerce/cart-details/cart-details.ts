@@ -32,12 +32,12 @@ import {
   IGroup,
   GroupResponse,
   ExtendedCartDetail,
-} from "../EcommerceInterface";
-import { UserService } from "src/app/services/UserService";
-import { CartDetailService } from "../services/CartDetailService";
-import { CartService } from "src/app/ecommerce/services/CartService";
-import { OrderService } from "../services/OrderService";
-import { GroupsService } from "../services/GroupsService";
+} from "../ecommerce.interface";
+import { UserService } from "src/app/services/user";
+import { CartDetailService } from "../services/cart-detail";
+import { CartService } from "src/app/ecommerce/services/cart";
+import { OrderService } from "../services/order";
+import { GroupsService } from "../services/groups";
 
 @Component({
   selector: "app-cart-details",
@@ -53,8 +53,8 @@ import { GroupsService } from "../services/GroupsService";
     ConfirmDialogModule,
     DialogModule,
   ],
-  templateUrl: "./CartDetailsComponent.html",
-  styleUrls: ["./CartDetailsComponent.css"],
+  templateUrl: "./cart-details.html",
+  styleUrls: ["./cart-details.css"],
   providers: [ConfirmationService, MessageService],
 })
 export class CartDetailsComponent implements OnInit, OnDestroy, AfterViewInit {

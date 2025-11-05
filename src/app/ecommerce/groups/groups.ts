@@ -26,9 +26,9 @@ import { MessageModule } from 'primeng/message';
 import { DropdownModule } from 'primeng/dropdown';
 
 // Services & Interfaces
-import { IGroup } from '../EcommerceInterface';
-import { GroupsService } from '../services/GroupsService';
-import { GenresService } from '../services/GenresService';
+import { IGroup } from '../ecommerce.interface';
+import { GroupsService } from '../services/groups';
+import { GenresService } from '../services/genres';
 
 @Component({
   selector: 'app-groups',
@@ -46,7 +46,7 @@ import { GenresService } from '../services/GenresService';
     MessageModule,
     DropdownModule,
   ],
-  templateUrl: './GroupsComponent.html',
+  templateUrl: './groups.html',
   providers: [ConfirmationService, MessageService],
 })
 export class GroupsComponent implements OnInit, OnDestroy {

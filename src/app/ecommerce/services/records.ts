@@ -2,9 +2,9 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable, tap, map, catchError, throwError } from 'rxjs';
 import { environment } from 'src/environments/environment';
-import { AuthGuard } from 'src/app/guards/AuthGuardService';
-import { IRecord } from '../EcommerceInterface';
-import { StockService } from './StockService';
+import { AuthGuard } from 'src/app/guards/auth-guard';
+import { IRecord } from '../ecommerce.interface';
+import { StockService } from './stock';
 
 @Injectable({
   providedIn: 'root',

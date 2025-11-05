@@ -4,10 +4,10 @@ import { CommonModule } from '@angular/common';
 import { FormsModule, NgForm } from '@angular/forms';
 import { Router, RouterLink } from '@angular/router';
 import { MessageService } from 'primeng/api';
-import { ILogin, ILoginResponse } from 'src/app/interfaces/LoginInterface';
-import { AppService } from 'src/app/services/AppService';
-import { AuthGuard } from 'src/app/guards/AuthGuardService';
-import { UserService } from 'src/app/services/UserService';
+import { ILogin, ILoginResponse } from 'src/app/interfaces/login.interface';
+import { AppService } from 'src/app/services/app';
+import { AuthGuard } from 'src/app/guards/auth-guard';
+import { UserService } from 'src/app/services/user';
 import { jwtDecode } from 'jwt-decode';
 import { InputTextModule } from 'primeng/inputtext';
 import { ButtonModule } from 'primeng/button';
@@ -27,8 +27,8 @@ import { MessagesModule } from 'primeng/messages';
         ToastModule,
         MessagesModule
     ],
-    templateUrl: './LoginComponent.html',
-    styleUrls: ['./LoginComponent.css'],
+    templateUrl: './login.html',
+    styleUrls: ['./login.css'],
     providers: [MessageService]
 })
 export class LoginComponent implements OnInit {

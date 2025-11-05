@@ -12,9 +12,9 @@ import { ProgressSpinnerModule } from 'primeng/progressspinner';
 import { MessageService } from 'primeng/api';
 
 // Services & Interfaces
-import { OrderService } from '../services/OrderService';
-import { UserService } from 'src/app/services/UserService';
-import { IOrder } from '../EcommerceInterface';
+import { OrderService } from '../services/order';
+import { UserService } from 'src/app/services/user';
+import { IOrder } from '../ecommerce.interface';
 
 @Component({
     selector: 'app-orders',
@@ -28,7 +28,7 @@ import { IOrder } from '../EcommerceInterface';
         TooltipModule,
         ProgressSpinnerModule
     ],
-    templateUrl: './OrdersComponent.html',
+    templateUrl: './orders.html',
     providers: [MessageService]
 })
 export class OrdersComponent implements OnInit, OnDestroy {

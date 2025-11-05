@@ -3,8 +3,8 @@ import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { CommonModule } from '@angular/common';
 import { Router, NavigationEnd, RouterLink } from '@angular/router';
 import { FormsModule } from '@angular/forms';
-import { UserService } from 'src/app/services/UserService';
-import { CartService } from 'src/app/ecommerce/services/CartService';
+import { UserService } from 'src/app/services/user';
+import { CartService } from 'src/app/ecommerce/services/cart';
 import { of } from 'rxjs';
 import { filter, switchMap, tap } from 'rxjs/operators';
 import { ButtonModule } from 'primeng/button';
@@ -19,7 +19,7 @@ import { TooltipModule } from 'primeng/tooltip';
         ButtonModule,
         TooltipModule
     ],
-    templateUrl: './NavbarComponent.html',
+    templateUrl: './navbar.html',
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class NavbarComponent implements OnInit {

@@ -4,8 +4,8 @@ import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
 import { MessageService } from 'primeng/api';
-import { IRegister } from 'src/app/interfaces/RegisterInterface';
-import { AppService } from 'src/app/services/AppService';
+import { IRegister } from 'src/app/interfaces/register.interface';
+import { AppService } from 'src/app/services/app';
 import { InputTextModule } from 'primeng/inputtext';
 import { ButtonModule } from 'primeng/button';
 import { PasswordModule } from 'primeng/password';
@@ -26,8 +26,8 @@ import { ProgressBarModule } from 'primeng/progressbar';
         MessagesModule,
         ProgressBarModule
     ],
-    templateUrl: './RegisterComponent.html',
-    styleUrls: ['./RegisterComponent.css'],
+    templateUrl: './register.html',
+    styleUrls: ['./register.css'],
     providers: [MessageService]
 })
 export class RegisterComponent {

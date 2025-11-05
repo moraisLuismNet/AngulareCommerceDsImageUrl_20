@@ -9,7 +9,7 @@ import { Subject } from 'rxjs';
         CommonModule,
         RouterOutlet
     ],
-    templateUrl: './EcommerceComponent.html',
+    templateUrl: './ecommerce.html',
     changeDetection: ChangeDetectionStrategy.OnPush,
     styles: [
         `

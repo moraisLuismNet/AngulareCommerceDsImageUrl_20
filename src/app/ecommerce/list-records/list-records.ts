@@ -30,16 +30,16 @@ import { TableModule } from 'primeng/table';
 import { InputNumberModule } from 'primeng/inputnumber';
 
 // Components
-import { NavbarComponent } from 'src/app/shared/navbar/NavbarComponent';
+import { NavbarComponent } from 'src/app/shared/navbar/navbar';
 
 // Services
-import { IRecord } from '../EcommerceInterface';
-import { RecordsService } from '../services/RecordsService';
-import { GroupsService } from '../services/GroupsService';
-import { CartService } from '../services/CartService';
-import { UserService } from 'src/app/services/UserService';
-import { StockService } from '../services/StockService';
-import { AuthGuard } from 'src/app/guards/AuthGuardService';
+import { IRecord } from '../ecommerce.interface';
+import { RecordsService } from '../services/records';
+import { GroupsService } from '../services/groups';
+import { CartService } from '../services/cart';
+import { UserService } from 'src/app/services/user';
+import { StockService } from '../services/stock';
+import { AuthGuard } from 'src/app/guards/auth-guard';
 
 @Component({
   selector: 'app-listrecords',
@@ -58,7 +58,7 @@ import { AuthGuard } from 'src/app/guards/AuthGuardService';
     ProgressSpinnerModule,
     InputNumberModule,
   ],
-  templateUrl: './ListrecordsComponent.html',
+  templateUrl: './list-records.html',
   providers: [ConfirmationService, MessageService],
 })
 export class ListrecordsComponent implements OnInit {

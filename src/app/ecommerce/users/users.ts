@@ -14,8 +14,8 @@ import { DialogModule } from 'primeng/dialog';
 import { ConfirmationService, MessageService } from 'primeng/api';
 
 // Services & Interfaces
-import { UsersService } from '../services/UsersService';
-import { IUser } from '../EcommerceInterface';
+import { UsersService } from '../services/users';
+import { IUser } from '../ecommerce.interface';
 
 @Component({
     selector: 'app-users',
@@ -31,7 +31,7 @@ import { IUser } from '../EcommerceInterface';
         ConfirmDialogModule,
         DialogModule
     ],
-    templateUrl: './UsersComponent.html',
+    templateUrl: './users.html',
     providers: [ConfirmationService, MessageService]
 })
 export class UsersComponent implements OnInit {

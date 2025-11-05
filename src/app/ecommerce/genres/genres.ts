@@ -14,8 +14,8 @@ import { TooltipModule } from 'primeng/tooltip';
 import { MessageModule } from 'primeng/message';
 
 // Services & Interfaces
-import { IGenre } from '../EcommerceInterface';
-import { GenresService } from '../services/GenresService';
+import { IGenre } from '../ecommerce.interface';
+import { GenresService } from '../services/genres';
 
 @Component({
     selector: 'app-genres',
@@ -31,7 +31,7 @@ import { GenresService } from '../services/GenresService';
         TooltipModule,
         MessageModule
     ],
-    templateUrl: './GenresComponent.html',
+    templateUrl: './genres.html',
     providers: [ConfirmationService, MessageService]
 })
 export class GenresComponent implements OnInit {

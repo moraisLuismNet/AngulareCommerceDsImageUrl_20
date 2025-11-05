@@ -5,7 +5,7 @@ import { filter, takeUntil } from 'rxjs/operators';
 import { Subject } from 'rxjs';
 
 // Components
-import { NavbarComponent } from './shared/navbar/NavbarComponent';
+import { NavbarComponent } from './shared/navbar/navbar';
 
 @Component({
     selector: 'app-root',
@@ -14,7 +14,7 @@ import { NavbarComponent } from './shared/navbar/NavbarComponent';
         RouterModule,
         NavbarComponent
     ],
-    templateUrl: './AppComponent.html',
+    templateUrl: './app.html',
 })
 export class AppComponent implements OnInit, OnDestroy {
   title = 'AngulareCommerceDs';
